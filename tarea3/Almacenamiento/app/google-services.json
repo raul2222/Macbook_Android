@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "451601113168",
+    "firebase_url": "https://almacenamiento-aea51.firebaseio.com",
+    "project_id": "almacenamiento-aea51",
+    "storage_bucket": "almacenamiento-aea51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451601113168:android:84a0364648deedd21cf155",
+        "android_client_info": {
+          "package_name": "es.upv.almacenamiento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451601113168-62aijte8bhb4f73gs6ko9fqoqh30ht8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.upv.almacenamiento",
+            "certificate_hash": "1e34f709a9415e7f4769a354b72504f43e1d62ca"
+          }
+        },
+        {
+          "client_id": "451601113168-rv7gd4c2qege6mrf46t591atjtqga6ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYq0gP1_QVmpLP-dxv6vsVcVWcpknnC7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451601113168-rv7gd4c2qege6mrf46t591atjtqga6ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
