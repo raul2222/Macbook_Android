@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SantosR_U2</string>
+    <string name="action_settings">Opciones</string>
+    <string name="buttom1">Mostrar lugares</string>
+    <string name="buttom2">Preferencias</string>
+    <string name="buttom3">Sobre</string>
+    <string name="buttom4">Salir</string>
+</resources>

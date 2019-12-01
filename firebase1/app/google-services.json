@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "295711497561",
+    "firebase_url": "https://gtipracticagrupo1.firebaseio.com",
+    "project_id": "gtipracticagrupo1",
+    "storage_bucket": "gtipracticagrupo1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295711497561:android:a0ea3cee93641c090b4048",
+        "android_client_info": {
+          "package_name": "es.upv.firebase1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295711497561-06dh3r9uu2r8uhpm5d6c70snthoucudi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.upv.firebase1",
+            "certificate_hash": "1e34f709a9415e7f4769a354b72504f43e1d62ca"
+          }
+        },
+        {
+          "client_id": "295711497561-af2uisgeir8snjhqhksr07u4800m6ov5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB68sKCBlpsPVsEEBe9v6mJ0s7NZ7n9apg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295711497561-af2uisgeir8snjhqhksr07u4800m6ov5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SantosR_U2</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttom1">Show places</string>
+    <string name="buttom2">Preferences</string>
+    <string name="buttom3">About</string>
+    <string name="buttom4">Exit</string>
+</resources>
