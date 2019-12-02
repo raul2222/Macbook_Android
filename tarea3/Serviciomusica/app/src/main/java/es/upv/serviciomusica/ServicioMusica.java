@@ -42,7 +42,8 @@ public class ServicioMusica extends Service {
                 new NotificationCompat.Builder(this, CANAL_ID)
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setContentTitle("Título")
-                        .setContentText("Texto de la notificación.").setLargeIcon(BitmapFactory.decodeResource(getResources(),
+                        .setContentText("Texto de la notificación.")
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(),
                         android.R.drawable.ic_media_play))
                         .setWhen(System.currentTimeMillis() + 1000 * 60 * 60)
                         .setContentInfo("más info")
