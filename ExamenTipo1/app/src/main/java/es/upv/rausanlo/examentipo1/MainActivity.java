@@ -13,6 +13,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity  {
 
     private EditText edit;
+    public static EditText lon;
+    public static EditText lat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
