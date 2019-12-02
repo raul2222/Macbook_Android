@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private EditText edit;
 
@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Button arrancar = findViewById(R.id.B2);
         arrancar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                startService(new Intent(MainActivity.this, ServicioGPS.class));
+                Log.e("llega", "llega");
+                startForegroundService(new Intent(MainActivity.this, ServicioGPS.class));
             }
         });
 
