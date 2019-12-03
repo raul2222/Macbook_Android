@@ -61,7 +61,7 @@ public class ServicioGPS extends Service {
                 Toast.LENGTH_SHORT).show();
         Log.e("Servicio detenido: ", "Service down");
         //notificationManager.cancel(NOTIFICACION_ID);
-        stopForeground(false);
+        stopForeground(true);
 
     }
 
@@ -84,6 +84,16 @@ public class ServicioGPS extends Service {
 
                         Log.e("Long: ", String.valueOf(longitude1));
                         Log.e("Lat: ", String.valueOf(latitude1));
+
+                        Intent i = new Intent(getApplicationContext(), ReceptorAnuncios.class);
+                        //i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        i.putExtra("lon", String.valueOf(longitude1));
+                        i.putExtra("lat", String.valueOf(latitude1));
+                        //context.startActivity(i);
+
+                        sendBroadcast(i);
+                        //sendBroadcast(new Intent(getApplicationContext(), ReceptorAnuncios.class));
+
 
                         sleep(5000);
 

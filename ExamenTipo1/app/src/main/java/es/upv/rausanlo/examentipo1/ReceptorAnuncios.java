@@ -3,14 +3,19 @@ package es.upv.rausanlo.examentipo1;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 
 public class ReceptorAnuncios extends BroadcastReceiver {
 
-    public static final String ACTION_RESP =
-            "com.example.intentservice.intent.action.RESPUESTA_OPERACION";
     @Override
     public void onReceive(Context context, Intent intent) {
-        Double res = intent.getDoubleExtra("resultado", 2);
-        //salida.append(" " + res + "\n");
+        Log.e("receptor","anuncio");
+
+        String lat = intent.getStringExtra("lat");
+        String lon = intent.getStringExtra("lon");
+        //Log.e("receptor lat",lat);
+        MainActivity.lon.setText(lon);
+        MainActivity.lat.setText(lat);
     }
 }
