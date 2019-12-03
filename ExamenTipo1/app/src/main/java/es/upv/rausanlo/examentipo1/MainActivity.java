@@ -5,17 +5,25 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -24,16 +32,54 @@ public class MainActivity extends AppCompatActivity  {
     public static TextView lat;
     public static final int MY_PERMISSIONS_REQUEST_FINE = 100;
 
+    static String tempe = "{'temperatura': ["+
+            " {'fecha':1288122023000, 'habitacion':'cocina', 'valor':18},"+
+            " {'fecha':1288122023000, 'habitacion':'baño', 'valor':19},"+
+            " {'fecha':1288122023000, 'habitacion':'comedor','valor':20},"+
+            " {'fecha':1288122223000, 'habitacion':'cocina', 'valor':17},"+
+            " {'fecha':1288122223000, 'habitacion':'baño', 'valor':19},"+
+            " {'fecha':1288122223000, 'habitacion':'comedor','valor':17},"+
+            " {'fecha':1288122623000, 'habitacion':'cocina', 'valor':19},"+
+            " {'fecha':1288122623000, 'habitacion':'baño', 'valor':22},"+
+            " {'fecha':1288122623000, 'habitacion':'comedor','valor':22},"+
+            "]}";
+    List<Temp> lista_habitaciones = new ArrayList<>();
 
+    Set<Temp> habitaciones = new HashSet<Temp>();
+
+    private void process(){
+
+        try {
+            Log.e("total", String.valueOf(lista_habitaciones.size()));
+
+            JSONObject jsonResponse = new JSONObject(tempe);
+            JSONArray jsonMainNode = jsonResponse.optJSONArray("temperatura");
+
+            for(int i = 0; i<jsonMainNode.length() - 1 ;i++){
+                JSONObject jsonChildNode = jsonMainNode.getJSONObject(i);
+                Temp t = new Temp();
+                t.setFecha(jsonChildNode.optLong("fecha"));
+                t.setHabitacion(jsonChildNode.optString("habitacion"));
+                t.setValor(jsonChildNode.optInt("valor"));
+                lista_habitaciones.add(t);
+            }
+            Log.e("total", String.valueOf(lista_habitaciones.size()));
+
+        } catch (Exception e) {
+            e.toString();
+            Log.e("erro", e.toString());
+        }
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        process();
         lon = findViewById(R.id.lon);
         lat =  findViewById(R.id.lat);
-
 
         Button arrancar = findViewById(R.id.B2);
         arrancar.setOnClickListener(new View.OnClickListener() {
