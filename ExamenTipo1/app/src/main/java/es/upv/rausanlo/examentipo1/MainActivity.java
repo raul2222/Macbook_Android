@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity  {
             "]}";
     List<Temp> lista_habitaciones = new ArrayList<>();
 
-    Set<Temp> habitaciones = new HashSet<Temp>();
+    Set<String> habitaciones = new HashSet<>();
 
     private void process(){
 
@@ -60,10 +60,50 @@ public class MainActivity extends AppCompatActivity  {
                 Temp t = new Temp();
                 t.setFecha(jsonChildNode.optLong("fecha"));
                 t.setHabitacion(jsonChildNode.optString("habitacion"));
+                habitaciones.add(jsonChildNode.optString("habitacion"));
                 t.setValor(jsonChildNode.optInt("valor"));
                 lista_habitaciones.add(t);
             }
             Log.e("total", String.valueOf(lista_habitaciones.size()));
+            Log.e("set", String.valueOf(habitaciones));
+
+            double cocina = 0;
+            int x = 0;
+            for (int i = 0 ; i < lista_habitaciones.size(); i++){
+                String hab =  lista_habitaciones.get(i).getHabitacion();
+                if(hab.equals("cocina")){
+                    cocina = cocina + (double)lista_habitaciones.get(i).getValor();
+                    x++;
+                }
+            }
+            cocina = cocina / x;
+            Log.e("cocina", String.valueOf(cocina));
+
+            double baño = 0;
+            x = 0;
+            for (int i = 0 ; i < lista_habitaciones.size(); i++){
+                String hab =  lista_habitaciones.get(i).getHabitacion();
+                if(hab.equals("baño")){
+                    baño = baño + (double)lista_habitaciones.get(i).getValor();
+                    x++;
+                }
+            }
+            baño = baño / x;
+            Log.e("baño", String.valueOf(baño));
+
+            double comedor = 0;
+            x = 0;
+            for (int i = 0 ; i < lista_habitaciones.size(); i++){
+                String hab =  lista_habitaciones.get(i).getHabitacion();
+                if(hab.equals("comedor")){
+                    comedor = comedor + (double)lista_habitaciones.get(i).getValor();
+                    x++;
+                }
+            }
+            comedor = comedor / x;
+            Log.e("comedor", String.valueOf(comedor));
+
+
 
         } catch (Exception e) {
             e.toString();
