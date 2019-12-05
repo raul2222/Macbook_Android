@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_settings"
+        android:title="@string/menu_main_config"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/acercaDe"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="10"
+        android:title="@string/menu_main_acerca_de"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="115"
+        android:title="@string/main_menu_buscar"
+        app:showAsAction="always|collapseActionView" />
+</menu>
