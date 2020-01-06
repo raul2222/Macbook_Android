@@ -39,6 +39,11 @@
             android:label="maps ..."
             />
 
+        <activity
+            android:name=".myRecy"
+            android:label="mycecli">
+        </activity>
+
 
     </application>
 

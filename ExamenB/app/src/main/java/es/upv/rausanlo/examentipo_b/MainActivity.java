@@ -115,6 +115,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void botonTres(View view) {
+
+        Intent i = new Intent(this, myRecy.class);
+        startActivity(i);
+        /*
         try {
             List<Integer> lista = new ArrayList<>();
 
@@ -133,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             Log.e("error ", e.toString());
         }
+        */
+
     }
 
 
