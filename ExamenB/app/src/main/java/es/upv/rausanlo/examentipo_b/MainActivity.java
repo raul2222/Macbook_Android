@@ -118,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             List<Integer> lista = new ArrayList<>();
 
+            //el set no permite elementos duplicados
+
             Set<Integer> unidades = new HashSet<>();
 
             for (int i = 0; i <= 9; i++) {

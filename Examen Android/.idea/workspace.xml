@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eecd3843-9eaa-4ccc-aa2e-7a4585c0ff66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ExamenTipo1/app/src/main/java/es/upv/rausanlo/examentipo1/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamenTipo1/app/src/main/java/es/upv/rausanlo/examentipo1/MainActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="eecd3843-9eaa-4ccc-aa2e-7a4585c0ff66" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +13,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="574" />
-    <option name="y" value="132" />
+    <option name="x" value="735" />
+    <option name="y" value="377" />
     <option name="width" value="1193" />
     <option name="height" value="737" />
   </component>
@@ -62,7 +60,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="574" y="132" width="1193" height="737" extended-state="0" />
+    <frame x="735" y="377" width="1193" height="737" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3284983" />
