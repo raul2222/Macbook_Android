@@ -2,31 +2,39 @@ package es.upv.rausanlo.practicaprocesado;
 
 public class Temp {
 
-    public static long FECHA;
-    public static String HABITACION;
-    public static int TEMPERATURA;
+    private long FECHA;
+    private String HABITACION;
+    private int TEMPERATURA;
 
-    public static long getFECHA() {
+    public Temp(long l, String s, int i) {
+        this.FECHA = l;
+        this.HABITACION = s;
+        this.TEMPERATURA = i;
+    }
+
+    public Temp() {
+    }
+    public  long getFECHA() {
         return FECHA;
     }
 
-    public static void setFECHA(long FECHA) {
-        Temp.FECHA = FECHA;
-    }
+    public  void setFECHA(long FECHA) { this.FECHA = FECHA;}
 
-    public static String getHABITACION() {
+    public  String getHABITACION() {
         return HABITACION;
     }
 
-    public static void setHABITACION(String HABITACION) {
-        Temp.HABITACION = HABITACION;
+    public  void setHABITACION(String HABITACION) {
+        this.HABITACION = HABITACION;
     }
 
-    public static int getTEMPERATURA() {
+    public  int getTEMPERATURA() {
         return TEMPERATURA;
     }
 
-    public static void setTEMPERATURA(int TEMPERATURA) {
-        Temp.TEMPERATURA = TEMPERATURA;
+    public  void setTEMPERATURA(int TEMPERATURA) {
+        this.TEMPERATURA = TEMPERATURA;
     }
+
+
 }
