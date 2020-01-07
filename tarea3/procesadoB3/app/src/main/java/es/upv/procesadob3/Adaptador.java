@@ -39,10 +39,11 @@ public class Adaptador extends FirestoreRecyclerAdapter<Clase, Adaptador.ViewHol
     }
     @Override protected void onBindViewHolder(@NonNull Adaptador
             .ViewHolder holder, int position, @NonNull Clase objeto) {
+
         holder.campo1.setText(getSnapshots().getSnapshot(position).getId());
-        //holder.campo1.setText(objeto.getDato1());
-        holder.campo2.setText( objeto.getDato2());
-        //holder.campo2.setText(new DecimalFormat("#.0").format(objeto.getCampo1())+"º");
+
+        holder.campo2.setText(new DecimalFormat("#.0").format(objeto.getCampo1())+"º");
+
         holder.itemView.setOnClickListener(onClickListener);
     }
     public void setOnItemClickListener(View.OnClickListener onClick) {
