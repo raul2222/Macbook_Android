@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "960643398897",
+    "firebase_url": "https://procesob3.firebaseio.com",
+    "project_id": "procesob3",
+    "storage_bucket": "procesob3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960643398897:android:37fd65bac24acb8a953d50",
+        "android_client_info": {
+          "package_name": "es.upv.procesadob3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960643398897-go2lcrnhtd697med1pra9b1ksb6nuee9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.upv.procesadob3",
+            "certificate_hash": "ac17ef2947f5b1b6a6ba8688eb67342472db3188"
+          }
+        },
+        {
+          "client_id": "960643398897-7d0f2hrrghs0a5f82ndef3gtmvds7ved.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrjtPfNFeii_4TnJIF-G8rEoymYkk15qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960643398897-7d0f2hrrghs0a5f82ndef3gtmvds7ved.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
